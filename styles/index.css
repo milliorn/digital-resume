@@ -28,13 +28,13 @@
   box-sizing: border-box;
   color: var(--mainTextColor);
   font-family: "Readex Pro";
-}
-
-body {
-  background-color: var(--mainBgColor);
+  margin: 0 auto;
+  overflow: hidden;
+  padding: auto;
 }
 
 p,
+h3,
 span,
 li {
   color: var(--secondaryTextColor);
