@@ -1,6 +1,6 @@
 # Digital Resume
 
-Digital Resume is a responsive and interactive resume template built using HTML, CSS, and JavaScript. It serves as my online resume.
+Digital Resume is built using HTML, CSS, and JavaScript. It serves as my online resume.
 
 ## Live Demo
 
