@@ -27,6 +27,7 @@
   --transition-duration-long: 0.9s;
 
   --margin-auto: 0 auto;
+  --margin-bottom: 0.5em;
 }
 
 * {
@@ -46,7 +47,7 @@ li {
   color: var(--secondaryTextColor);
   font-weight: 300;
   line-height: 1.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: var(--margin-bottom)
   transition: var(--transition-duration);
 }
 
@@ -59,7 +60,7 @@ a {
 
 li {
   line-height: 1.9em;
-  margin-bottom: 0.5em;
+  margin-bottom: var(--margin-)
   transition: var(--transition-duration);
 }
 
@@ -85,7 +86,7 @@ strong {
 
 #user-name {
   line-height: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: var(--margin-)
   transition: var(--transition-duration);
 }
 
@@ -99,7 +100,7 @@ strong {
 
 #email {
   color: var(--mainTextColor);
-  margin-bottom: 0.5em;
+  margin-bottom: var(--margin-)
   text-decoration: none;
   transition: var(--transition-duration);
 }
