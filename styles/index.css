@@ -22,12 +22,20 @@
   --secondaryTextColor-dark: #adb0b1;
   --secondaryTextColor-light: rgb(51 51 51);
   --secondaryTextColor: var(--secondaryTextColor-dark);
-  
+
   --transition-duration: 0.3s;
   --transition-duration-long: 0.9s;
 
   --margin-auto: 0 auto;
   --margin-bottom: 0.5em;
+  --margin-bottom-short: 1em;
+  --margin-bottom-long: 2em;
+
+  --text-decoration: none;
+
+  --padding: 1em;
+
+  --display: flex;
 }
 
 * {
@@ -47,20 +55,20 @@ li {
   color: var(--secondaryTextColor);
   font-weight: 300;
   line-height: 1.5em;
-  margin-bottom: var(--margin-bottom)
+  margin-bottom: var(--margin-bottom);
   transition: var(--transition-duration);
 }
 
 a {
   color: var(--mainLinkColor);
   font-weight: 500;
-  text-decoration: none;
+  text-decoration: var(--text-decoration);
   transition: var(--transition-duration);
 }
 
 li {
   line-height: 1.9em;
-  margin-bottom: var(--margin-)
+  margin-bottom: var(--margin-bottom);
   transition: var(--transition-duration);
 }
 
@@ -70,9 +78,9 @@ strong {
 }
 
 #container--main {
-  margin: var
+  margin: var(--margin-auto);
   max-width: 960px;
-  padding: 1em;
+  padding: var(--padding);
   transition: var(--transition-duration);
 }
 
@@ -80,28 +88,28 @@ strong {
   display: flex;
   gap: 4em;
   justify-content: space-between;
-  margin-bottom: 2em;
+  margin-bottom: var(--margin-bottom-long);
   transition: var(--transition-duration);
 }
 
 #user-name {
   line-height: 1em;
-  margin-bottom: var(--margin-)
+  margin-bottom: var(--margin-bottom);
   transition: var(--transition-duration);
 }
 
 #profile-pic {
   border-radius: 50%;
-  height: 150px;
+  height: 300px;
+  width: 300px;
   object-fit: cover;
-  width: 150px;
   transition: var(--transition-duration);
 }
 
 #email {
   color: var(--mainTextColor);
-  margin-bottom: var(--margin-)
-  text-decoration: none;
+  margin-bottom: var(--margin-bottom);
+  text-decoration: var(--text-decoration);
   transition: var(--transition-duration);
 }
 
@@ -110,7 +118,7 @@ strong {
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin-bottom: 1em;
+  margin-bottom: var(--margin-bottom);
   row-gap: 1em;
   transition: var(--transition-duration);
 }
@@ -129,7 +137,7 @@ strong {
 
 #qualifications--list {
   list-style: none;
-  margin-bottom: 1em;
+  margin-bottom: var(--margin-bottom);
   transition: var(--transition-duration);
 }
 
@@ -138,21 +146,21 @@ strong {
   gap: 1em;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 1em;
+  margin-bottom: var(--margin-bottom);
   transition: var(--transition-duration);
 }
 
 .card--techstack {
   border-radius: 5px;
   border: 1px solid var(--mainBorderColor);
-  padding: 1em;
+  padding: var(--padding);
   transition: var(--transition-duration);
   width: 100%;
 }
 
 .card--project {
   border-top: 1px solid var(--mainBorderColor);
-  padding: 1em;
+  padding: var(--padding);
   transition: var(--transition-duration);
   width: 100%;
 }
@@ -172,8 +180,8 @@ strong {
 .card--work-history {
   border: 1px solid var(--mainBorderColor);
   border-radius: 5px;
-  margin-bottom: 1em;
-  padding: 1em;
+  margin-bottom: var(--margin-bottom);
+  padding: var(--padding);
   transition: var(--transition-duration);
   width: 100%;
 }
@@ -193,7 +201,7 @@ strong {
     gap: 1em;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 2em;
+    margin-bottom: var(--margin-bottom);
     transition: var(--transition-duration);
   }
 
