@@ -46,6 +46,7 @@
   overflow: hidden;
   padding: auto;
   transition: var(--transition-duration);
+  text-align: center;
 }
 
 p,
