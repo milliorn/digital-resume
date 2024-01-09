@@ -50,6 +50,11 @@ li {
   line-height: 1.9em;
 }
 
+strong {
+  font-weight: 600;
+  color: var(--mainTextColor);
+}
+
 #container--main {
   margin: 0 auto;
   max-width: 700px;
@@ -119,8 +124,10 @@ li {
 }
 
 .card--work-history {
-  border-left: 1px solid var(--mainBorderColor);
-  border-right: 1px solid var(--mainBorderColor);
+  border: 1px solid var(--mainBorderColor);
+  border-radius: 5px;
+  margin-bottom: 1em;
+  padding: 1em;
 }
 
 .line-break {
